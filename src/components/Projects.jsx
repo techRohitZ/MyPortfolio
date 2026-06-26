@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ExternalLink, Github, Zap, Bot, Heart } from 'lucide-react';
+import { ExternalLink, Github, Zap, Bot, Sparkle, Wand2 } from 'lucide-react';
 
 const Projects = () => {
   const projects = [
@@ -19,7 +19,7 @@ const Projects = () => {
       icon: <Zap className="w-8 h-8" />,
       gradient: 'from-blue-500 via-purple-600 to-indigo-700',
       liveDemo: 'https://qacore-ai.netlify.app/',
-      github: 'https://github.com/techRohitZ',
+      github: 'https://github.com/techRohitZ/QaCore',
       status: 'Live'
     },
     {
@@ -34,32 +34,41 @@ const Projects = () => {
         'Multiple AI model integration',
         'Subscription management'
       ],
-      icon: <Bot className="w-8 h-8" />,
+      icon: <Wand2 className="w-8 h-8" />,
       gradient: 'from-emerald-500 via-teal-600 to-cyan-700',
       liveDemo: 'https://quickai-drab.vercel.app/',
-      github: 'https://github.com/techRohitZ',
+      github: 'https://github.com/techRohitZ/QuickAI',
       status: 'Live'
     },
     {
-      id: 3,
-      title: 'Blood Donation System',
-      subtitle: 'Full-Stack MERN Management System',
-      description: 'A comprehensive blood donation management system connecting donors with recipients. Features real-time inventory tracking, donor management, emergency notifications, and administrative dashboard for efficient blood bank operations.',
-      technologies: ['React.js', 'Node.js', 'MongoDB', 'Express.js', 'Socket.io', 'JWT'],
-      features: [
-        'Donor registration & management',
-        'Real-time inventory tracking',
-        'Emergency notification system',
-        'Admin dashboard & analytics'
-      ],
-      icon: <Heart className="w-8 h-8" />,
-      gradient: 'from-red-500 via-pink-600 to-rose-700',
-      liveDemo: '#',
-      github: '#',
-      status: 'Completed'
-    }
+  id: 3,
+  title: 'MockMate AI',
+  subtitle: 'AI-Powered Mock Interview & Assessment Platform',
+  description: 'A full-stack MERN application designed to help developers master technical and HR interviews. Engineered with a scalable cloud backend and integrated with AI models to deliver real-time, interactive one-on-one mock interviews, complete with a live coding environment and instant performance analytics.',
+  technologies: [
+    'React.js', 
+    'Node.js', 
+    'Express.js', 
+    'MongoDB Atlas', 
+    'Grok API', 
+    'JWT', 
+    'Netlify', 
+    'Render'
+  ],
+  features: [
+    'Interactive AI-driven one-on-one interview simulations',
+    'Integrated live coding environment for technical assessments',
+    'Automated scoring with actionable post-interview feedback',
+    'Secure user authentication and session management via JWT',
+    'Cloud-deployed architecture with optimized database routing'
+  ],
+  icon: <Bot className="w-8 h-8" />,
+  gradient: 'from-red-500 via-pink-600 to-rose-700',
+  liveDemo: 'https://mockk-ai.netlify.app/',
+  github: 'https://github.com/techRohitZ/MockMate-AI', // Tip: Link directly to the specific repo if possible, e.g., /techRohitZ/mock-ai
+  status: 'Live'
+}
   ];
-
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -293,3 +302,4 @@ const Projects = () => {
 };
 
 export default Projects;
+

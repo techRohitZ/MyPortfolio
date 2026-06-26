@@ -50,7 +50,7 @@ const Contact = () => {
     {
       icon: <ExternalLink className="w-6 h-6" />,
       title: 'Open to',
-      value: 'Remote Opportunities',
+      value: 'Remote & Onsite Opportunities',
       link: null,
       color: 'from-blue-500 to-cyan-600'
     }
